@@ -19,7 +19,7 @@
 #include "Util.h"
 #include "logging.h"
 #include "Timer.h"
-#include "mersennetwister/MersenneTwister.h"
+#include "MersenneTwister.h"
 #include "utf8cpp/utf8.h"
 #include <boost/asio.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>

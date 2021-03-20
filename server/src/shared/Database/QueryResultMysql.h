@@ -27,7 +27,7 @@
 #include <winsock2.h>    // sort off
 #include <mysql/mysql.h> // sort off
 #else
-#include <mysql.h> // sort off
+#include <mysql/mysql.h> // sort off
 #endif
 
 class QueryResultMysql : public QueryResult

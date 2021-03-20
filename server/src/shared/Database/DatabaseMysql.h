@@ -28,7 +28,7 @@
 #include <winsock2.h>    // sort off
 #include <mysql/mysql.h> // sort off
 #else
-#include <mysql.h> // sort off
+#include <mysql/mysql.h> // sort off
 #endif
 
 // MySQL prepared statement class
@@ -53,7 +53,7 @@ protected:
     void addParam(int nIndex, const SqlStmtFieldData& data);
 
     static enum_field_types ToMySQLType(
-        const SqlStmtFieldData& data, my_bool& bUnsigned);
+        const SqlStmtFieldData& data, bool& bUnsigned);
 
 private:
     void RemoveBinds();

@@ -528,12 +528,12 @@ bool Database::CheckRequiredField(
                 "The table `%s` in your [%s] database indicates that this "
                 "database is out of date!",
                 table_name, db_name);
-            logging.error("");
+            logging.error(" ");
             logging.error(
                 "  [A] You have: --> `%s.sql`", cur_sql_update_name.c_str());
-            logging.error("");
+            logging.error(" ");
             logging.error("  [B] You need: --> `%s.sql`", req_sql_update_name);
-            logging.error("");
+            logging.error(" ");
             logging.error(
                 "You must apply all updates after [A] to [B] to use mangos "
                 "with this database.");
@@ -552,11 +552,11 @@ bool Database::CheckRequiredField(
             logging.error(
                 "MaNGOS cannot find the version info needed to check that the "
                 "db is up to date.");
-            logging.error("");
+            logging.error(" ");
             logging.error(
                 "This revision of MaNGOS requires a database updated to:");
             logging.error("`%s.sql`", req_sql_update_name);
-            logging.error("");
+            logging.error(" ");
 
             if (!strcmp(db_name, "WORLD"))
                 logging.error(
@@ -577,11 +577,11 @@ bool Database::CheckRequiredField(
         logging.error(
             "MaNGOS cannot find the version info needed to check that the db "
             "is up to date.");
-        logging.error("");
+        logging.error(" ");
         logging.error(
             "This revision of mangos requires a database updated to:");
         logging.error("`%s.sql`", req_sql_update_name);
-        logging.error("");
+        logging.error(" ");
 
         if (!strcmp(db_name, "WORLD"))
             logging.error(
