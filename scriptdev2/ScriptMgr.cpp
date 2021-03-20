@@ -2,7 +2,7 @@
  * This program is free software licensed under GPL version 2
  * Please see the included DOCS/LICENSE.TXT for more information */
 
-#include "../../../game/ScriptMgr.h"
+#include "ScriptMgr.h"
 #include "DBCStores.h"
 #include "ObjectMgr.h"
 #include "ProgressBar.h"
